@@ -1,0 +1,263 @@
+html
+	font-size: 16px
+
+body
+	letter-spacing: 1.1px
+	font-family: $font-stack
+
+	.bg-red
+		background: red
+
+	.icon
+		display: table-cell
+		vertical-align: middle
+		padding-right: 0.5rem
+		font-size: 2rem
+
+	.icon-text
+		display: table-cell
+		font-size: 0.8rem
+		vertical-align: middle
+	
+	.behind
+		z-index: -1
+
+	button
+		font-weight: 800
+
+	.lead
+		opacity: 0.8
+
+	.blue1
+		color: $blue1
+
+	.bg-blue
+		+gradient(to right)
+
+	.fa-custom
+		+gradient(to right)
+		+fa-bg(text)
+		font-size: 3rem
+		margin-left: -2rem
+
+	.accent
+		color: $accent
+
+	.masthead
+		color: white
+		+gradient(to right)
+		padding-bottom: 6rem
+
+
+		nav
+			.nav-item
+				padding:
+					right: 1.5rem
+
+			button
+				height: 100%
+				line-height: 2.5rem
+
+		.lead
+			line-height: 2rem
+			opacity: 0.6
+			font-size: 1.2rem
+
+
+		.email-submit-wrapper
+
+			input
+				background: none
+				color: #fff
+				padding: 1rem
+				margin-right: -1px
+				border: 
+					width: 2px
+					color: white
+					radius: 12px
+				&::placeholder
+					color: white
+					opacity: 0.8
+
+			button
+				border-top-right-radius: 10px !important
+				border-bottom-right-radius: 10px !important
+				padding: 1rem 2rem
+
+	.pre-title
+		text-transform: uppercase
+		color: $accent
+		font-size: 1rem
+		letter-spacing: 1.5px		
+			
+
+	.carpicker
+		
+		.container
+			margin-top: -4rem
+		.row
+			background: white
+			box-shadow: 0px 20px 80px -5px rgba(0, 0, 0, 0.2)
+			justify-content: space-around
+			justify-items: stretch
+
+		.form-group
+			flex: 1
+			padding: 0rem 0rem 
+			margin-bottom: 0
+			border-right:
+				width: 1px
+				color: #eee
+				style: solid
+
+			select
+				min-width: 9rem
+				font-size: 12px
+				cursor: pointer
+				padding-left: 0
+				border: none
+				-webkit-appearance: none
+				-moz-appearance: none
+				-o-appearance: none
+		button 
+			// padding:
+			// 	left: 5rem
+			// 	right: 5rem
+	.section3
+		padding-top: 8rem
+		padding-bottom: 8rem
+
+		.lead
+			line-height: 2.5rem
+
+		ul
+			li
+				margin:
+					top: 1.5rem
+				line-height: 3rem
+				display: table
+				.li-span
+					display: table-cell
+					font-size: 1rem
+				.fa-li
+					display: table-cell
+					vertical-align: middle
+					position: static
+
+	.section4
+		color: white
+		position: relative
+	
+	.after-bg
+		+gradient(to right)
+		width: 50%
+		position: absolute
+		top: -4rem
+		bottom: -4rem
+		right: 0
+		+media-breakpoint-down(sm)
+			width: 100%
+
+	.lead
+		line-height: 2rem
+
+	.card-deck
+		margin:
+			left: -20%
+			right: 0rem
+		z-index: 99
+		+media-breakpoint-down(lg)
+			font-size: 13px
+		+media-breakpoint-down(sm)
+			margin-left: 0
+
+		.card
+			color: #000
+			border: none
+			box-shadow: 0px 20px 80px -5px rgba(0, 0, 0, 0.2)
+			border-radius: 0
+			min-width: 16em
+
+			.card-img-top
+				border-radius: 0
+
+			.card-body
+				position: relative
+				padding: 1.5em
+				display: flex
+				flex-direction: column
+
+				.card-text
+					opacity: 0.6
+					letter-spacing: 0.4px
+					font-size: 0.9eem
+
+				.emblem
+					+gradient(to right)
+					color: white
+					padding: 0.3em 1em
+					text-transform: uppercase
+					font-size: 0.7em
+					position: absolute
+					top: -1em
+					letter-spacing: 1.5px
+
+			.car-meta-box
+				padding:
+					top: 0.25em
+					right: 1.2em
+					bottom: 1.74em
+					left: 1.2em
+
+				.price-tag
+					margin-bottom: 0
+					font-weight: 700
+					flex: 1
+					&::before
+						content: "€"
+						font-size: 1.2em
+						vertical-align: top
+						margin-right: 0.2em
+				.price-info
+					font-size: 0.8em
+
+	.section5
+		form
+			label
+				color: $accent
+
+			input, textarea
+				border:
+					top: none
+					right: none
+					left: none
+					radius: 0
+				padding-left: 0
+		.contact-details
+			.fa-phone
+				transform: rotate(90deg)
+			.fa
+				color: $accent
+			.contact-item
+				font-family: $font-stack
+				font-weight: 500
+				padding-left: 0.5rem
+				line-height: 4rem
+				font-size: 0.9rem
+				color: black
+				letter-spacing: 0px
+	footer
+		+media-breakpoint-down(sm)
+			font-size: 12px
+		color: white
+		.footer-brand
+			font-size: 1.5em
+			.fa-car
+				font-size: 1.8em
+				color: white
+				padding-right: 0.5em
+				vertical-align: sub
+
+
+
+
